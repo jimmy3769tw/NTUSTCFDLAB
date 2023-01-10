@@ -43,7 +43,7 @@ subroutine GradientPhiGauss(Phi,dPhidX,Dxm,Dym,Dzm)
     use variables 
     implicit none
 
-    real*8, dimension(nx,ny,nz) :: Phi
+    real*8, dimension(-1:nx+2,-1:ny+2,-1:nz+2) :: Phi
     real*8, dimension(nx,ny,nz,3) :: dPhidX
 
     !--------Local variables--------!
