@@ -1,13 +1,14 @@
 # Makefile 
-# Nom du compilateur
-FC = mpiifort
 
-# Options de compilation: optimisation, debug etc...
-OPT =  -O3 -heap-arrays  -fopenmp -mcmodel=large 
+#Intel compiler
+# FC = mpiifort
+# OPT =  -O3 -heap-arrays -xHost -fopenmp -mcmodel=large 
 
+# GNU compiler 
+FC = mpifort
+OPT = -O3 -heap-arrays  -fopenmp
 
-
-# -ipo -xCORE-AVX2 -align array32byte -qopenmp -Ofast
+# -ipo -xCORE-AVX2 -align array32byte -qopenmp 
 # -mcmodel=large
 # -heap-arrays 64
 
